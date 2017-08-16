@@ -5,7 +5,6 @@ import org.junit.Test;
 
 import com.service.KataBowlingGame;
 
-
 public class BowlingTest{
 	//Créatin d'une instance de l'objet kataBowlingGame
 	//Variable globale dans toute la classe pour l'utiliser dans tout les méthodes
@@ -14,7 +13,7 @@ public class BowlingTest{
 
 	@Test
 	public void gutterGame() throws Exception {
-		// Aucun quille n'est renversé dans tout les coups (manche)
+		// Aucun quille n'est renversé dans tout les coups (manches)
 		rollMany(20, 0);
 		// Le score doit être à 0
 		assertEquals(0, game.score());
@@ -28,14 +27,13 @@ public class BowlingTest{
 		assertEquals(20,game.score());
 	}
 
-
 	@Test
 	public void canRollSpare() throws Exception{
 		// Renversé les quilles sur deux coups
 		rollSpare();
 		// Renversé encore 3 quilles
 		game.roll(3);
-		// 17 coups sans aucun quille renversé
+		// 17 coups sans aucune quille renversé
 		rollMany(17,0);
 		// Résultat 10 + bonus spare 3 + la sommes des quilles renversé 
 		// sur les deux derniers coups (3+0) = 16
@@ -50,9 +48,9 @@ public class BowlingTest{
 		game.roll(5);
 		// Renversé 3 quilles
 		game.roll(3);
-		// 16 coups sans aucun quille renversé
+		// 16 coups sans aucune quille renversée
 		rollMany(16,0);
-		// Résultat 10 + bonus strike 8 + la sommes des quilles renversé 
+		// Résultat 10 + bonus strike 8 + la sommes des quilles renversées 
 		// sur les deux derniers coups (5+3) = 26
 		assertEquals(26, game.score());
 	}
