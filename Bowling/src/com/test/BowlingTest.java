@@ -13,7 +13,7 @@ public class BowlingTest{
 
 	@Test
 	public void gutterGame() throws Exception {
-		// Aucun quille n'est renversé dans tout les coups (manches)
+		// Aucun quille n'est renversé dans tout les coups (manchesssss)
 		rollMany(20, 0);
 		// Le score doit être à 0
 		assertEquals(0, game.score());
@@ -72,6 +72,9 @@ public class BowlingTest{
 		game.roll(5);
 		game.roll(5);
 	}
+	
+	
+	
 
 	
 	
