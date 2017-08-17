@@ -77,6 +77,4 @@ public class KataBowlingGame{
 	private boolean isStrike(int frameIndex){
 		return rolls[frameIndex]==10;
 	}
-
-
 }
